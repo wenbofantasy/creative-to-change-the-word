@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comepany_name: MyString
+  job_name: MyString
+  first_category: MyString
+  first_name: MyString
+  second_category: MyString
+  second_name: MyString
+  work_adress: MyString
+  salary: MyString
+  job_nature: false
+  education: MyString
+  vacancies: MyString
+  recruitment: false
+  work_experience: MyString
+  manager_experience: MyString
+  job_description: MyText
+
+two:
+  comepany_name: MyString
+  job_name: MyString
+  first_category: MyString
+  first_name: MyString
+  second_category: MyString
+  second_name: MyString
+  work_adress: MyString
+  salary: MyString
+  job_nature: false
+  education: MyString
+  vacancies: MyString
+  recruitment: false
+  work_experience: MyString
+  manager_experience: MyString
+  job_description: MyText

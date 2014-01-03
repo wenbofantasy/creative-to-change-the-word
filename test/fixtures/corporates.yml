@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  firm_net: MyString
+  firm_scale: MyString
+  pinyin: MyString
+  sign_address: MyString
+  hope_work: MyString
+  seek_status: MyString
+  contact_address: MyString
+  firm_name: MyString
+  firm_tel: MyString
+  manager_name: MyString
+  manager_contact: MyString
+  hope_salary: MyString
+  expaction_job: MyString
+  experience_year: MyText
+  language_ability: MyText
+  year_get: MyText
+  certificate: MyText
+  skill: MyText
+
+two:
+  email: MyString
+  firm_net: MyString
+  firm_scale: MyString
+  pinyin: MyString
+  sign_address: MyString
+  hope_work: MyString
+  seek_status: MyString
+  contact_address: MyString
+  firm_name: MyString
+  firm_tel: MyString
+  manager_name: MyString
+  manager_contact: MyString
+  hope_salary: MyString
+  expaction_job: MyString
+  experience_year: MyText
+  language_ability: MyText
+  year_get: MyText
+  certificate: MyText
+  skill: MyText
