@@ -50,7 +50,7 @@ body { font-family:Arial,"微软雅黑"; color:#000; font-size:12px; background:
 .top_title{padding:10px 0 0 23px;}
 .top_title a{text-decoration:underline;}
 .top_title a:hover{text-decoration:none;}
-.content_ti{margin-left:15px; padding-bottom:9px; width:790px; height:4px; overflow:hidden;background:url(../images/line_bg.png) repeat-x left; }
+.content_ti{margin-left:15px; padding-bottom:9px; width:790px; height:4px; overflow:hidden;background:url(/assets/line_bg.png) repeat-x left; }
 .content_timg{padding-left:15px;}
 .service_left{width:370px; float:left; font-size:11px; line-height:18px; padding-top:6px;} 
 .service_left p{ padding:17px 0 0 22px;}
@@ -62,7 +62,7 @@ body { font-family:Arial,"微软雅黑"; color:#000; font-size:12px; background:
 
 /*personal.html*/
 .personal_list{ width:350px; overflow:hidden;}
-.personal_icon{ margin-top:10px; float:left; font-size:14px; color:#fff; background:url(../images/personal_icon.png) no-repeat; width:47px; height:47px; line-height:47px; text-align:center;}
+.personal_icon{ margin-top:10px; float:left; font-size:14px; color:#fff; background:url(/assets/personal_icon.png) no-repeat; width:47px; height:47px; line-height:47px; text-align:center;}
 .personal_text{ width:270px; float:left; line-height:18px; font-size:11px; padding:7px 0 11px 9px;}
 .personal_text span{ color:#c4015a;}
 
@@ -79,17 +79,17 @@ body { font-family:Arial,"微软雅黑"; color:#000; font-size:12px; background:
 .personal_xlk{font-size:11px; width:155px; height:23px; border:1px #e40f6f solid; color:#666;}
 .personal_xlk2{font-size:11px; width:79px; height:23px; border:1px #e40f6f solid; color:#666;}
 ul.portforlio_xlc1 li{float:left; padding-right:10px; }
-.personal_add{background:url(../images/add_img.png) no-repeat; float:left; width:46px; height:23px; border:none; margin-left:10px;}
+.personal_add{background:url(/assets/add_img.png) no-repeat; float:left; width:46px; height:23px; border:none; margin-left:10px;}
 .personal_right{ text-align:center; float:left; width:179px; height:251px; background:#fff; border:1px #666 solid; margin:50px 0 0 23px; padding:1px 1px 0 0px;}
 .personal_img{ padding:10px 0 10px 0;}
-.personal_upload{ background:url(../images/upload_img.gif) no-repeat; width:76px; height:25px; border:none;}
+.personal_upload{ background:url(/assets/upload_img.gif) no-repeat; width:76px; height:25px; border:none;}
 .personal_font{ padding-top:10px; font-size:11px;}
 .personal2_gdt{ width:785px; height:375px; overflow-y:scroll;}
 .portfolio_del{width:230px; height:30px;line-height:30px; font-size:12px; background:#fff; border:1px #999 solid;}
-.submit_add{ width:51px; height:30px; border:none; font-size:0; background:url(../images/add.gif) no-repeat;}
+.submit_add{ width:51px; height:30px; border:none; font-size:0; background:url(/assets/add.gif) no-repeat;}
 .personal2_xlk1{width:80px; height:22px; border:1px #e40f6f solid;}
 .personal2_xlk2{width:53px; height:22px; border:1px #e40f6f solid;}    
-.submit_icon{ width:56px; border:none; font-size:0; height:32px; background:url(../images/submit.gif) no-repeat;}
+.submit_icon{ width:56px; border:none; font-size:0; height:32px; background:url(/assets/submit.gif) no-repeat;}
 
 
 

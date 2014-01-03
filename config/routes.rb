@@ -1,7 +1,8 @@
 Creative::Application.routes.draw do
-  get "users/new"
+  resources :users, only: [:create, :show,  :new]
+  #get "users/new"
   get "users/personal"
-  post "users/create"
+  #post "users/create"
   get "infomation/company"
   get "infomation/speake"
   get "infomation/group"

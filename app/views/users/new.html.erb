@@ -48,28 +48,29 @@
         <div class="personal_left">
           <p style="padding-bottom:15px;">请完整填写必须的表格内容，然后点击发送进行确认。*为必填项。</p>
           <div class="personal_tb">
+            <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="+CHHcNtvAZOYtN6vFg0uT7reC2ZQLWnxC1k5Z3VESK0=" />
             <table width="500" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="19%"><span>*</span> 邮件：</td>
-                <td width="81%"><input name="textfield" type="text" class="personal_input" id="textfield" /></td>
+                <td width="81%"><input name="user[email]" type="text" class="personal_input" id="user_email" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 姓名：</td>
-                <td><input name="textfield5" type="text" class="personal_input" id="textfield7" /></td>
+                <td><input name="user[name]" type="text" class="personal_input" id="user_name" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 拼音：</td>
-                <td><input name="textfield2" type="text" class="personal_input" id="textfield2" /></td>
+                <td><input name="user[pinyin]" type="text" class="personal_input" id="user_pinyin" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 性别 ：</td>
                 <td><ul class="portforlio_xlc1">
                     <li>
-                      <input type="radio" name="radio" id="radio" value="radio" />
+                      <input type="radio" name="user[sex]" id="user_sex" value="man" />
                       &nbsp;男</li>
                     <li>&nbsp;</li>
                     <li>
-                      <input type="radio" name="radio" id="radio" value="radio" />
+                      <input type="radio" name="user[sex]" id="user_sex" value="woman" />
                       &nbsp;女</li>
                   </ul></td>
               </tr>
@@ -77,19 +78,23 @@
                 <td><span>*</span> 出生年月：</td>
                 <td><ul class="portforlio_xlc1">
                     <li>
-                      <select name="select" class="personal_xlk2" id="select">
+                      <select name="user[date_birth]" class="personal_xlk2" id="user_date_birth">
                         <option>选择</option>
+                        <option>1993</option>
+                        <option>2005</option>
                       </select>
                     </li>
                     <li>年</li>
                     <li>
-                      <select name="select" class="personal_xlk2" id="select">
+                      <select name="user[month]" class="personal_xlk2" id="user_month">
                         <option>选择</option>
+                        <option>3</option>
+                        <option>8</option>
                       </select>
                     </li>
                     <li>月</li>
                     <li>
-                      <select name="select" class="personal_xlk2" id="select">
+                      <select name="user[day]" class="personal_xlk2" id="user_day">
                         <option>选择</option>
                       </select>
                     </li>
@@ -98,71 +103,75 @@
               </tr>
               <tr>
                 <td><span>*</span> 户口：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield3" /></td>
+                <td><input name="user[accounts]" type="text" class="personal_input" id="user_accounts" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 国籍：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield4" /></td>
+                <td><input name="user[country]" type="text" class="personal_input" id="user_country" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 身份证号码：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield5" /></td>
+                <td><input name="user[number]" type="text" class="personal_input" id="user_number" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 座机：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield6" /></td>
+                <td><input name="user[landline]" type="text" class="personal_input" id="user_landline" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 手机：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield8" /></td>
+                <td><input name="user[mobile]" type="text" class="personal_input" id="user_mobile" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 邮编 ：</td>
-                <td><input name="textfield3" type="text" class="personal_input" id="textfield9" /></td>
+                <td><input name="user[zip_code]" type="text" class="personal_input" id="user_zip_code" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 联系地址：</td>
-                <td><input name="textfield3" type="text" class="personal_input2" id="textfield10" /></td>
+                <td><input name="user[contact_address]" type="text" class="personal_input2" id="user_contact_address" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 期望薪资：</td>
-                <td><input name="textfield4" type="text" class="personal_input" id="textfield11" /></td>
+                <td><input name="user[salary_expectation]" type="text" class="personal_input" id="user_salary_expectation" /></td>
               </tr>
               <tr>
                 <td><span>*</span> 求职状态：</td>
-                <td><select name="select" class="personal_xlk" id="select">
+                <td><select name="user[job_status]" class="personal_xlk" id="user_job_status">
                     <option>请选择</option>
+                    <option>test1</option>
+                    <option>test2</option>
                   </select></td>
               </tr>
               <tr>
                 <td><span>*</span> 期望行业：</td>
-                <td><select name="select" class="personal_xlk" id="select">
+                <td><select name="user[excepetation_industry]" class="personal_xlk" id="user_excepetation_industry">
                     <option>请选择</option>
+                    <option>test11</option>
+                    <option>test22</option>
                   </select></td>
               </tr>
               <tr>
                 <td><span>*</span> 期望职种 ：</td>
-                <td><input name="textfield4" type="text" class="personal_input" id="textfield14" /></td>
+                <td><input name="user[excepetation_job]" type="text" class="personal_input" id="user_excepetation" /></td>
               </tr>
               <tr>
                 <td valign="top"><span>*</span> 经验・年数：</td>
-                <td><textarea name="textfield6" class="personal_input3" id="textfield15"></textarea></td>
+                <td><textarea name="user[experience_year]" class="personal_input3" id="user_experience_year"></textarea></td>
               </tr>
               <tr>
                 <td valign="top"><span>*</span> 语言能力：</td>
-                <td><textarea name="textfield9" class="personal_input3" id="textfield17"></textarea></td>
+                <td><textarea name="user[language_ability]" class="personal_input3" id="user_language_ability"></textarea></td>
               </tr>
               <tr>
                 <td valign="top"><span>*</span> 年收入：</td>
-                <td><textarea name="textfield7" class="personal_input3" id="textfield12"></textarea></td>
+                <td><textarea name="user[revenue]" class="personal_input3" id="user_revenue"></textarea></td>
               </tr>
               <tr>
                 <td valign="top"><span>*</span> 执照・证书：</td>
-                <td><textarea name="textfield7" class="personal_input3" id="textfield13"></textarea></td>
+                <td><textarea name="user[certificates]" class="personal_input3" id="user_certificates"></textarea></td>
               </tr>
               <tr>
                 <td valign="top"><span>*</span> 技能：</td>
-                <td><textarea name="textfield8" class="personal_input3" id="textfield16"></textarea></td>
+                <td><textarea name="user[skill]" class="personal_input3" id="user_skill"></textarea></td>
               </tr>
               <tr>
                 <td colspan="2">作品集 (* pdf, ppt, pptx)</td>
@@ -173,7 +182,7 @@
                       <tr>
                         <td width="16%"></td>
                         <td><div>
-                            <input id="portfolio_0" type="file" name="portfolio_0" class="portfolio_del"/>
+                            <input id="user_choose_file" type="file" name="user[choose_file]" class="portfolio_del"/>
                           </div></td>
                       </tr>
                       <tr>
@@ -189,7 +198,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                               <tr>
                                 <td width="16%"></td>
-                                <td><ul class="portforlio_xlc1">
+                               <td><ul class="portforlio_xlc1">
                                     <li>
                                       <select name="select" class="personal2_xlk1" id="select">
                                         <option>选择</option>
@@ -252,6 +261,8 @@
                   </div></td>
               </tr>
             </table>
+            <input name="submit" value="create" type="submit" >
+         </div>
           </div>
         </div>
         <div class="personal_right">

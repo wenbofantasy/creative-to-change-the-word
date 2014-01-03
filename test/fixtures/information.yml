@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_time: 2014-01-03 17:33:42
+  last_time: 2014-01-03 17:33:42
+  firm_name: MyString
+  postition: MyString
+  post_job: MyString
+  salary: MyString
+  work_profile: MyText
+  user: 
+
+two:
+  first_time: 2014-01-03 17:33:42
+  last_time: 2014-01-03 17:33:42
+  firm_name: MyString
+  postition: MyString
+  post_job: MyString
+  salary: MyString
+  work_profile: MyText
+  user: 

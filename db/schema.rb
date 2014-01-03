@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140103023037) do
+ActiveRecord::Schema.define(:version => 20140103101302) do
 
   create_table "corporates", :force => true do |t|
     t.string   "email"
@@ -36,6 +36,21 @@ ActiveRecord::Schema.define(:version => 20140103023037) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
+
+  create_table "profiles", :force => true do |t|
+    t.datetime "first_time"
+    t.datetime "last_time"
+    t.string   "firm_name"
+    t.string   "postition"
+    t.string   "post_job"
+    t.string   "salary"
+    t.text     "work_profile"
+    t.integer  "user_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "profiles", ["user_id"], :name => "index_profiles_on_user_id"
 
   create_table "recruits", :force => true do |t|
     t.string   "comepany_name"
@@ -82,6 +97,8 @@ ActiveRecord::Schema.define(:version => 20140103023037) do
     t.string   "choose_file"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.integer  "month"
+    t.integer  "day"
   end
 
 end
