@@ -1,7 +1,13 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
+    @user.profiles.build
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
 
   def personal
   end

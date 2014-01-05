@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140103123447) do
+ActiveRecord::Schema.define(:version => 20140105080719) do
 
   create_table "corporates", :force => true do |t|
     t.string   "email"
@@ -103,6 +103,11 @@ ActiveRecord::Schema.define(:version => 20140103123447) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "choose_file_name"
+    t.string   "choose_content_type"
+    t.integer  "choose_file_size"
+    t.datetime "choose_updated_at"
+    t.string   "sexy"
   end
 
 end

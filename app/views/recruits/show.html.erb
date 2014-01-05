@@ -14,21 +14,46 @@
       </div>
       <div class="in_content">
         <div class="in_left">
+          <div class="menu02">
+            <ul>
+              <li><a href="#"><img src="/assets/left_nav1.gif" /></a>
+              <ul>
+                <li><a href="/home/service"><img src="/assets/menu01_off.gif" /></a></li>
+                <li><a href="/users/personal"><img src="/assets/menu02_off.gif" /></a></li>
+                <li><img src="/assets/menu03_on.gif" /></li>
+                <li><a href="/recruits/release"><img src="/assets/menu04_off.gif" /></a></li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#"><img src="/assets/left_nav2.gif" /></a>
+              <ul style="background:#ffff00;">
+                <li><a href="/infomation/company"><img src="/assets/menu05_off.gif" /></a></li>
+                <li><a href="/infomation/speake"><img src="/assets/menu06_off.gif" /></a></li>
+                <li><a href="/infomation/group"><img src="/assets/menu07_off.gif" /></a></li>
+                <li><a href="/infomation/contact"><img src="/assets/menu08_off.gif" /></a></li>
+                <li><a href="/infomation/affirms"><img src="/assets/menu09_off.gif" /></a></li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content_list">
 
-          <p>
-          <b>education:</b>
-          <%= @recruit.education%>
-          </p>
+<% @recruit.attributes.each do |attr_name, attr_value| %>
+  <div class="user_attribute">
+    <h2> <%= attr_name %>: <%= attr_value %></h2>
+  </div>
+<% end %>
         </div>
       </div>
-
-
-
-      <p class="clear"></p>
-      <div class="footer">
-        <p class="footer_link"><a href="/infomation/contact">Contact us</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="/infomation/affirms">Privacy Policy</a></p>
-        <p class="copyright">COPYRIGHT CREEK&RIVER CO.,LTD. ALL RIGHTS RESERVED.　|　<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备10203917号</a></p>
-      </div>
     </div>
-  </body>
-</html>
+    <p class="clear"></p>
+    <div class="footer">
+      <p class="footer_link"><a href="/infomation/contact">Contact us</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="/infomation/affirms">Privacy Policy</a></p>
+      <p class="copyright">COPYRIGHT CREEK&RIVER CO.,LTD. ALL RIGHTS RESERVED.　|　<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备10203917号</a></p>
+    </div>
+  </div>
+</body>

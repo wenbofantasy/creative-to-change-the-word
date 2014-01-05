@@ -1,8 +1,11 @@
 Creative::Application.routes.draw do
+
+  get "users/personal"
   resources :users, only: [:create, :show,  :new]
   #get "users/new"
-  get "users/personal"
+  #get "users/show"
   #post "users/create"
+
   get "infomation/company"
   get "infomation/speake"
   get "infomation/group"
@@ -11,9 +14,10 @@ Creative::Application.routes.draw do
   #get "recruits/new"
   get "recruits/release"
   resources :recruits, only: [:create, :show,  :new]
-  #get "home/index"
-  #root to: "home#index"
+  get "home/index"
+  root to: "home#index"
   get "home/service"
+  #root to: "home#service"
   #resources :corporates, :only => [:new, :create]
   #get "corporates/new"
   #get "corporates/show"

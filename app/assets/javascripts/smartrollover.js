@@ -36,7 +36,7 @@ function picSpeed(){
 	if(old>4){
 		old=1;
 	}
-	styleEff(old);
+	//styleEff(old);
 }
 
 var color=["#ffce55","#ecf1ed","#ffffff","#ffffff"];
@@ -47,7 +47,7 @@ function bannerEff(mc,isOver,id){
 		mc.setAttribute("src", mc.getAttribute("src").replace("_on.", "_off."));
 	}
 	if(id!=now){
-		styleEff(id);
+		//styleEff(id);
 	}
 	old=now;
 	

@@ -43,8 +43,9 @@ body { font-family:Arial,"微软雅黑"; color:#000; font-size:12px; background:
 .copyright{float:right; font-size:11px;}
 .copyright a{color:#fff;}
 .copyright a:hover{color:#fff;}
-
-
+.hidden {
+      display: none;
+    }
 /*service.html*/
 .content_list{width:820px; height:560px; float:right; background:#fff; margin-bottom:10px; overflow:hidden;}
 .top_title{padding:10px 0 0 23px;}
