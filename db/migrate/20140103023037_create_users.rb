@@ -4,14 +4,14 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :name
       t.string :pinyin
-      t.boolean :sex
+      t.string :sex
       t.datetime :date_birth
       t.string :accounts
       t.string :country
-      t.integer :number
+      t.string :number
       t.string :landline
       t.string :mobile
-      t.integer :zip_code
+      t.string :zip_code
       t.string :contact_address
       t.string :salary_expectation
       t.string :job_status

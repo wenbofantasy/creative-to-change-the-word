@@ -68,11 +68,11 @@
                         <td><span>*</span> 性别 ：</td>
                         <td><ul class="portforlio_xlc1">
                             <li>
-                            <input type="radio" name="user[sex]" id="user_sex" value="man" />
+                            <input type="radio" name="user[sex]" id="男" value="男" />
                             &nbsp;男</li>
                             <li>&nbsp;</li>
                             <li>
-                            <input type="radio" name="user[sex]" id="user_sex" value="woman" />
+                            <input type="radio" name="user[sex]" id="女" value="女" />
                             &nbsp;女</li>
                         </ul></td>
                       </tr>
@@ -89,8 +89,8 @@
                             </li>
                             <li>月</li>
                             <li>
-                                            <%= f.date_select :date_birth, {:discard_year => true,:discard_month => true}, :class => "personal2_xlk1", :id => "select" %>
-                            <select name="user[day]" class="personal_xlk2" id="user_day">
+                            <%= f.date_select :date_birth, {:discard_year => true, :discard_month => true}, :class => "personal2_xlk1", :id => "select" %>
+                            <%#<select name="user[day]" class="personal_xlk2" id="user_day">%>
                               <option>选择</option>
                             </select>
                             </li>
@@ -179,7 +179,7 @@
                                 <td width="16%"></td>
                                 <td><div>
                                     <%#<input id="user_choose_file" type="file" name="user[choose_file]" class="portfolio_del"/>%>
-                                    <%= f.file_field :choose%>
+                                    <%= f.file_field :choose_file%>
                                 </div></td>
                               </tr>
                               <tr>
@@ -256,8 +256,7 @@
               <p class="personal_img"><img src="/assets/image.jpg" /></p>
               <div>
                 <a id="asdf" href="###"><img src="/assets/upload_img.gif"></a>
-                <%= f.file_field :avatar, :id => "qw"%>
-                <input type="file" id="qw" name="image" class="hidden" />
+                <%= f.file_field :avatar, :id => "qw", :class => "hidden" %>
               </div>
               <p class="personal_font">（推荐115px*150px）</p>
             </div>

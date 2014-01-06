@@ -9,10 +9,9 @@ class CreateRecruits < ActiveRecord::Migration
       t.string :second_name
       t.string :work_adress
       t.string :salary
-      t.boolean :job_nature
       t.string :education
       t.string :vacancies
-      t.boolean :recruitment
+      t.string :recruitment
       t.string :work_experience
       t.string :manager_experience
       t.text :job_description

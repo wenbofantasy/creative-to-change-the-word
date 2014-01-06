@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140105080719) do
+ActiveRecord::Schema.define(:version => 20140106055826) do
 
   create_table "corporates", :force => true do |t|
     t.string   "email"
@@ -61,29 +61,29 @@ ActiveRecord::Schema.define(:version => 20140105080719) do
     t.string   "second_name"
     t.string   "work_adress"
     t.string   "salary"
-    t.boolean  "job_nature"
     t.string   "education"
     t.string   "vacancies"
-    t.boolean  "recruitment"
+    t.string   "recruitment"
     t.string   "work_experience"
     t.string   "manager_experience"
     t.text     "job_description"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.string   "jobs"
   end
 
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "name"
     t.string   "pinyin"
-    t.boolean  "sex"
+    t.string   "sex"
     t.datetime "date_birth"
     t.string   "accounts"
     t.string   "country"
-    t.integer  "number"
+    t.string   "number"
     t.string   "landline"
     t.string   "mobile"
-    t.integer  "zip_code"
+    t.string   "zip_code"
     t.string   "contact_address"
     t.string   "salary_expectation"
     t.string   "job_status"
@@ -97,17 +97,6 @@ ActiveRecord::Schema.define(:version => 20140105080719) do
     t.string   "choose_file"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
-    t.integer  "month"
-    t.integer  "day"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
-    t.string   "choose_file_name"
-    t.string   "choose_content_type"
-    t.integer  "choose_file_size"
-    t.datetime "choose_updated_at"
-    t.string   "sexy"
   end
 
 end
