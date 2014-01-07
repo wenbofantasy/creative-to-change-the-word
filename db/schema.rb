@@ -97,6 +97,17 @@ ActiveRecord::Schema.define(:version => 20140106055826) do
     t.string   "choose_file"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.integer  "month"
+    t.integer  "day"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.string   "choose_file_name"
+    t.string   "choose_content_type"
+    t.integer  "choose_file_size"
+    t.datetime "choose_updated_at"
+    t.string   "sexy"
   end
 
 end

@@ -1,0 +1,25 @@
+<tr>
+  <td width="16%"></td>
+  <td>
+    <div>
+      <ul id="portfolio">
+        <li class="portfolio_var">
+          <button class="portfolio_del">Delete</button>
+          <div class="">
+              <%= file_field_tag 'portfolio_0' %>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div><input type="button" value="Add" class="portfolio_add submit_add"></div>
+  </td>
+  <td>&nbsp;</td>
+</tr>
+<script type="text/javascript">
+$('#portfolio').addInputArea();
+</script>

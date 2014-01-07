@@ -175,72 +175,14 @@
                       <tr>
                         <td colspan="2"><div class="portforlio_list">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td width="16%"></td>
-                                <td><div>
-                                    <%#<input id="user_choose_file" type="file" name="user[choose_file]" class="portfolio_del"/>%>
-                                    <%= f.file_field :choose_file%>
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td><input name="Add" type="button" value="Add" class="submit_add" /></td>
-                                <td>&nbsp;</td>
-                              </tr>
+                                <%= render :partial => 'attached_files' %>
                               <tr>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                               </tr>
                               <tr>
-                                <td colspan="2"><div class="portforlio_list">
-                                            <%= f.fields_for :profiles do |profile_form| %>
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tr>
-                                        <td width="16%"></td>
-                                        <td>
-                                          <ul class="portforlio_xlc1">
-                                            <li>
-                                            <%= profile_form.date_select :first_time, {:start_year => 1980, :discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
-                                            </li>
-                                            <li>月</li>
-                                            <li>~</li>
-                                            <li>
-                                            <%= profile_form.date_select :last_time, {:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
-                                            </li>
-                                            <li>月</li>
-                                        </ul></td>
-                                      </tr>
-                                      <tr>
-                                        <td><span>*</span> 公司名：</td>
-                                        <td><%= profile_form.text_field :firm_name, :class => "personal_input" %></td>
-                                      </tr>
-                                      <tr>
-                                        <td><span>*</span> 职位：</td>
-                                        <td><%= profile_form.text_field :postition, :class => "personal_input" %></td>
-                                      </tr>
-                                      <tr>
-                                        <td><span>*</span> 担当职务：</td>
-                                        <td><%= profile_form.text_field :post_job, :class => "personal_input" %></td>
-                                      </tr>
-                                      <tr>
-                                        <td><span>*</span> 工资：</td>
-                                        <td><%= profile_form.text_field :salary, :class => "personal_input" %></td>
-                                      </tr>
-                                      <tr>
-                                        <td valign="top"><span>*</span> 工作简介：</td>
-                                        <td><%= profile_form.text_area :work_profile, :class => "personal_input3" %></td>
-                                      </tr>
-                                      <tr>
-                                        <td><a href="#"><img src="/assets/add.gif" /></a></td>
-                                        <td>&nbsp;</td>
-                                      </tr>
-                                      <tr>
-                                        <td></td>
-                                        <%#<td><a href="#"><img src="/assets/submit_off.gif" /></a></td>%>
-                                        <td><input type="image" src="/assets/submit_off.gif"  /></td>
-                                      </tr>
-                                    </table>
-                                  <% end %>
-                                  </div>
+                                <td colspan="2">
+                                  <%= render :partial => 'employment_record', :locals => {:f => f} %>
                                 </td>
                               </tr>
                             </table>
