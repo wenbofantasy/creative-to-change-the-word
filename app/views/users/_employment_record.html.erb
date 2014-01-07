@@ -5,11 +5,11 @@
       <tbody><tr>
           <td width="16%"></td>
           <td><ul class="portforlio_xlc1">
-              <%= form_for :user, :url => "users" , :class=> "new_user" do |f| %>
-                <%= f.fields_for @user.profiles do |fields|%>
+              <%= form_for :user, :url => "users" , :class=> "new_user", :id => "new_user" do |f| %>
+                <%= f.fields_for :profiles do |fields|%>
 
                   <li>
-                  <%= fields.date_select :first_time, {:discard_month => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
+                  <%= fields.date_select :first_time, {:start_year => 1980,:discard_month => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select"%>
                   </li>
                   <li>年</li>
                   <li>
@@ -30,23 +30,23 @@
               </td>
             </tr>
             <tr>
-              <td><label for="user_profile_firm_name"><span>*</span> 公司名：</label></td>
+              <td><label for="user_profiles_firm_name"><span>*</span> 公司名：</label></td>
               <td><%= fields.text_field :firm_name,  :class => 'personal_input' %></td>
             </tr>
             <tr>
-              <td><label for="user_profile_postition"><span>*</span> 职位：</label></td>
+              <td><label for="user_profiles_postition"><span>*</span> 职位：</label></td>
               <td><%= fields.text_field :postition,  :class => 'personal_input' %></td>
             </tr>
             <tr>
-              <td><label for="user_profile_post_job"><span>*</span> 担当职务：</label></td>
+              <td><label for="user_profiles_post_job"><span>*</span> 担当职务：</label></td>
               <td><%= fields.text_field :post_job,  :class => 'personal_input' %></td>
             </tr>
             <tr>
-              <td><label for="user_profile_salary"><span>*</span> 工资：</label></td>
+              <td><label for="user_profiles_salary"><span>*</span> 工资：</label></td>
               <td><%= fields.text_field :salary,  :class => 'personal_input' %></td>
             </tr>
             <tr>
-              <td><label for="user_profile_work_profile"><span>*</span> 工作简介：</label></td>
+              <td><label for="user_profiles_work_profile"><span>*</span> 工作简介：</label></td>
               <td><%= fields.text_area :work_profile,  :class => 'personal_input3' %></td>
             </tr>
             <tr>
