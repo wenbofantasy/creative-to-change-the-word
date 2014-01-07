@@ -1,66 +1,66 @@
 <ul id="record_employment">
   <li class="record_employment_var" style="margin:4px 0 4px 0">
-    <div class="portforlio_list">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tbody><tr>
+  <div class="portforlio_list">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
           <td width="16%"></td>
           <td><ul class="portforlio_xlc1">
-              <li>
-                <%= select_tag 'record_employment_start_year_0', options_for_select(selector_year), :style => "width:80px", :include_blank => true, :class => "portforlio_xlk1" %>
-              </li>
-              <li>年</li>
-              <li>
-                <%= select_tag 'record_employment_start_month_0', options_for_select(selector_month), :style => "width:80px", :include_blank => true, :class => "portforlio_xlk2" %>
-                  <option>选择</option>
-                </select>
-              </li>
-              <li>月</li>
-              <li>~</li>
-              <li>
-                <%= select_tag 'record_employment_end_year_0', options_for_select(selector_year), :style => "width:80px", :include_blank => true, :class => "portforlio_xlk1" %>
-              </li>
-              <li>年</li>
-              <li>
-                <%= select_tag 'record_employment_end_month_0', options_for_select(selector_month), :style => "width:80px", :include_blank => true, :class => "portforlio_xlk2" %>
-              </li>
-              <li>月</li>
-              <li style="float:right;"><button class="record_employment_del">Delete</button></li>
-            </ul></td>
-        </tr>
-        <tr>
-          <td>公司名</td>
-          <td><%= text_field_tag :record_employment_company_name_0, nil, :class => 'portforlio_ipt2' %></td>
-        </tr>
-        <tr>
-          <td>职位</td>
-          <td><%= text_field_tag :record_employment_position_0, nil, :class => 'portforlio_ipt2' %></td>
-        </tr>
-        <tr>
-          <td>担当职务</td>
-          <td><%= text_field_tag :record_employment_company_turn_0, nil, :class => 'portforlio_ipt2' %></td>
-        </tr>
-        <tr>
-          <td>工资</td>
-          <td><%= text_field_tag :record_employment_salary_0, nil, :class => 'portforlio_ipt2' %></td>
-        </tr>
-        <tr>
-          <td valign="top">工作简介</td>
-          <td><%= text_area_tag :record_employment_company_about_0, nil, :cols => 45, :rows => 5 %></td>
-        </tr>
-        <tr>
-          <td><div style="margin-top:10px"><input type="button" value="Add" class="record_employment_add"></div></td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody></table>
-    </div>
+              <%= form_for :user, :url => "users" , :class=> "new_user" do |f| %>
+                <%= f.fields_for @user.profiles do |fields|%>
+
+                  <li>
+                  <%= fields.date_select :first_time, {:discard_month => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
+                  </li>
+                  <li>年</li>
+                  <li>
+                  <%= fields.date_select :first_time, {:discard_year => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
+                  </li>
+                  <li>月</li>
+                  <li>~</li>
+                  <li>
+                  <%= fields.date_select :last_time, {:discard_month => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
+                  </li>
+                  <li>年</li>
+                  <li>
+                  <%= fields.date_select :last_time, {:discard_year => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
+                  </li>
+                  <li>月</li>
+                  <li style="float:right;"><button class="record_employment_del">Delete</button></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="user_profile_firm_name"><span>*</span> 公司名：</label></td>
+              <td><%= fields.text_field :firm_name,  :class => 'personal_input' %></td>
+            </tr>
+            <tr>
+              <td><label for="user_profile_postition"><span>*</span> 职位：</label></td>
+              <td><%= fields.text_field :postition,  :class => 'personal_input' %></td>
+            </tr>
+            <tr>
+              <td><label for="user_profile_post_job"><span>*</span> 担当职务：</label></td>
+              <td><%= fields.text_field :post_job,  :class => 'personal_input' %></td>
+            </tr>
+            <tr>
+              <td><label for="user_profile_salary"><span>*</span> 工资：</label></td>
+              <td><%= fields.text_field :salary,  :class => 'personal_input' %></td>
+            </tr>
+            <tr>
+              <td><label for="user_profile_work_profile"><span>*</span> 工作简介：</label></td>
+              <td><%= fields.text_area :work_profile,  :class => 'personal_input3' %></td>
+            </tr>
+            <tr>
+              <td><div style="margin-top:10px"><input type="button" value="Add" class="record_employment_add submit_add"></div></td>
+              <td>&nbsp;</td>
+            </tr>
+        </tbody></table>
+      </div>
+    <% end %>
+  <% end%>
 
   </li>
 </ul> 
 
 <script type="text/javascript">
-$('#record_employment').addInputArea();
+  $('#record_employment').addInputArea();
 </script>
