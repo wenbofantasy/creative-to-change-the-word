@@ -6,7 +6,25 @@
         <li class="portfolio_var">
           <button class="portfolio_del">Delete</button>
           <div class="">
-              <%= file_field_tag 'portfolio_0' %>
+            <tr>
+              <td width="18%"></td>
+              <td width="82%">
+                <ul>
+                  <div><input name="portfolio_0" type="text" class="personal_input4" id="portfolio_0" />
+
+                  <a id="ff" href="#"><img src="/assets/select.gif" /></a>
+                  <%= file_field_tag 'portfolio_0', :class=>"hidden", :id=>"qq"  %>
+    <input type="button" value="Add" class="portfolio_add submit_add" ></div>
+
+            <script type="text/javascript">
+              $('a#ff').on('click', function(e) {
+                  e.preventDefault();
+                  $("input#qq").trigger('click');
+                  })
+             </script>
+                  
+              </ul></td>
+            </tr>
           </div>
         </li>
 
@@ -16,7 +34,6 @@
 </tr>
 <tr>
   <td>
-    <div><input type="button" value="Add" class="portfolio_add submit_add"></div>
   </td>
   <td>&nbsp;</td>
 </tr>

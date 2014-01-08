@@ -5,11 +5,11 @@
       <tbody><tr>
           <td width="16%"></td>
           <td><ul class="portforlio_xlc1">
-              <%= form_for :user, :url => "users" , :class=> "new_user", :id => "new_user" do |f| %>
+              <%= form_for @user, :url => "users" , :class=> "new_user", :id => "new_user" do |f| %>
                 <%= f.fields_for :profiles do |fields|%>
 
                   <li>
-                  <%= fields.date_select :first_time, {:start_year => 1980,:discard_month => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select"%>
+                  <%= fields.date_select :first_time, {:start_year => 1980,:discard_month => true,:discard_day => true}, :value=>"", :class => "personal2_xlk1", :id => "select"%>
                   </li>
                   <li>年</li>
                   <li>
@@ -25,7 +25,6 @@
                   <%= fields.date_select :last_time, {:discard_year => true,:discard_day => true}, :class => "personal2_xlk1", :id => "select" %>
                   </li>
                   <li>月</li>
-                  <li style="float:right;"><button class="record_employment_del">Delete</button></li>
                 </ul>
               </td>
             </tr>
@@ -46,11 +45,12 @@
               <td><%= fields.text_field :salary,  :class => 'personal_input' %></td>
             </tr>
             <tr>
-              <td><label for="user_profiles_work_profile"><span>*</span> 工作简介：</label></td>
+              <td valign="top"><label for="user_profiles_work_profile"><span>*</span> 工作简介：</label></td>
               <td><%= fields.text_area :work_profile,  :class => 'personal_input3' %></td>
             </tr>
             <tr>
-              <td><div style="margin-top:10px"><input type="button" value="Add" class="record_employment_add submit_add"></div></td>
+              <td><div style="margin-top:10px"><input type="button" value="Add" class="record_employment_add submit_add">
+              <button class="record_employment_del" src="images/delete.gif" >Delete</button> </div></td>
               <td>&nbsp;</td>
             </tr>
         </tbody></table>
