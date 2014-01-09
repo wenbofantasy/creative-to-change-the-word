@@ -5,8 +5,12 @@ class User < ActiveRecord::Base
   #attr_accessible :avatar
     has_attached_file :avatar, :styles => {  :thumb => "110x110>" }, :default_url => "/assets/rails.png"
     has_attached_file :choose, :styles => {  :thumb => "110x110>" }, :default_url => "/assets/rails.png"
-  has_many :profiles
+  #has_many :profiles
+  has_many :portfolios
   has_many :record_employments
   #has_many :choose_files
-  accepts_nested_attributes_for :profiles
+  #accepts_nested_attributes_for :profiles
+  accepts_nested_attributes_for :portfolios
+
+
 end
