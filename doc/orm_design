@@ -1,0 +1,1 @@
+bob@hp:creative-to-change-the-word$ rails generate  model RecordEmployment user:references start_year:integer start_month:integer end_year:integer end_month:integer company_name:string position:string company_turn:string company_about:string salary:string 

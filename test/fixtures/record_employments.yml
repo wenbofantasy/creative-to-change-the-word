@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  start_year: 1
+  start_month: 1
+  end_year: 1
+  end_month: 1
+  company_name: MyString
+  position: MyString
+  company_turn: MyString
+  company_about: MyString
+  salary: MyString
+
+two:
+  user: 
+  start_year: 1
+  start_month: 1
+  end_year: 1
+  end_month: 1
+  company_name: MyString
+  position: MyString
+  company_turn: MyString
+  company_about: MyString
+  salary: MyString
